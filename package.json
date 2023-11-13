@@ -1,0 +1,34 @@
+{
+  "name": "primeequitybackend",
+  "version": "1.0.0",
+  "description": "The server side codebase for prime equity",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/index.server.js",
+    "build": "babel src -d build",
+    "start": "node build/index.server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globalvillage09/PrimeEquityBackend.git"
+  },
+  "author": "Prime Equity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/globalvillage09/PrimeEquityBackend/issues"
+  },
+  "homepage": "https://github.com/globalvillage09/PrimeEquityBackend#readme",
+  "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.2",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1"
+  }
+}
